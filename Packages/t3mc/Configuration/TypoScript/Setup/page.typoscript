@@ -1,9 +1,11 @@
+config.contentObjectExceptionHandler = 0
+
 page = PAGE
 page {
    10 = FLUIDTEMPLATE
    10 {
-        layoutRootPath = EXT:Packages/t3mc/Resources/Private/Layouts/
-        partialRootPath = EXT:Packages/t3mc/Resources/Private/Partials/
+        layoutRootPath = EXT:t3mc/Resources/Private/Layouts/
+        partialRootPath = EXT:t3mc/Resources/Private/Partials/
         file = EXT:t3mc/Resources/Private/Templates/Default.html  
    }
 }

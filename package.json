@@ -1,0 +1,22 @@
+{
+  "name": "typo3-11-testprojekt",
+  "version": "1.0.0",
+  "description": "## Ein Typo3 Projekt Anlegen:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihneacojocaru/typo3-startup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihneacojocaru/typo3-startup/issues"
+  },
+  "homepage": "https://github.com/mihneacojocaru/typo3-startup#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

@@ -2,6 +2,11 @@ config.contentObjectExceptionHandler = 0
 
 page = PAGE
 page {
+
+   includeCSS{
+      output = EXT:t3mc/Resources/Public/Css/output.css
+   }
+
    10 = FLUIDTEMPLATE
    10 {
         layoutRootPath = EXT:t3mc/Resources/Private/Layouts/

@@ -1,1 +1,10 @@
 @import "EXT:t3mc/Configuration/TypoScript/Constants/*.typoscript"
+
+t3mc{
+
+    rootPageId = 1
+
+    logoText = Brand
+    logoImage = EXT:t3mc/Resources/Public/Images/logo.png
+
+}

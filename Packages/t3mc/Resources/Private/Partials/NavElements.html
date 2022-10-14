@@ -1,0 +1,45 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <ul
+    id="navMenu"
+    class="dark:bg-black text-white text-center w-full md:flex flex-col justify-center items-center absolute left-0 top-[56px] hidden md:relative md:top-0 md:left-0 md:flex-row md:w-fit"
+  >
+    <f:for each="{mainMenu}" as="item">
+      <li
+        class="px-3 py-2 text-lg capitalize cursor-pointer hover:text-orange-200 transition-all duration-200"
+      >
+        <f:link.page pageUid="{item.data.uid}">{item.title}</f:link.page>
+      </li>
+    </f:for>
+  </ul>
+
+  <f:comment>
+    <ul
+      id="navMenu"
+      class="dark:bg-black text-white text-center w-full md:flex flex-col justify-center items-center absolute left-0 top-[56px] hidden md:relative md:top-0 md:left-0 md:flex-row md:w-fit"
+    >
+      <li
+        class="px-3 py-2 text-lg capitalize cursor-pointer hover:text-orange-200 transition-all duration-200"
+      >
+        item 1
+      </li>
+      <li
+        class="px-3 py-2 text-lg capitalize cursor-pointer hover:text-orange-200 transition-all duration-200"
+      >
+        item 2
+      </li>
+      <li
+        class="px-3 py-2 text-lg capitalize cursor-pointer hover:text-orange-200 transition-all duration-200"
+      >
+        item 3
+      </li>
+      <li
+        class="px-3 py-2 text-lg capitalize cursor-pointer hover:text-orange-200 transition-all duration-200"
+      >
+        item 4
+      </li>
+    </ul>
+  </f:comment>
+</html>

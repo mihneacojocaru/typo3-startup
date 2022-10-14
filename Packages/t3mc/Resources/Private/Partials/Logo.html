@@ -1,0 +1,25 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <f:link.page pageUid="{settings.rootPageId}">
+    <f:if condition="{settings.logoImage}">
+      <f:then>
+        <div class="flex justify-center items-center">
+          <f:image
+            src="{settings.logoImage}"
+            alt="{setting.logoText}"
+            height="30"
+          />
+          <span
+            class="px-1 text-3xl font-light text-white hover:text-orange-200"
+            >{settings.logoText}</span
+          >
+        </div>
+      </f:then>
+      <f:else>
+        <h2 class="text-3xl p-3 hover:text-orange-200">{settings.logoText}</h2>
+      </f:else>
+    </f:if>
+  </f:link.page>
+</html>

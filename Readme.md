@@ -52,7 +52,7 @@ Basic **ddev** Befehle:
   MC:~$ ddev restart
   MC:~$ ddev start
   MC:~$ ddev stop
-  MC:~$ ddev launch/typo3
+  MC:~$ ddev launch /typo3
   MC:~$ ddev launch -p
   MC:~$ ddev launch -m
 

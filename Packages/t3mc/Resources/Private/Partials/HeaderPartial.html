@@ -1,0 +1,33 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <header class="shadow-lg dark:bg-black">
+    <nav class="container mx-auto px-6 py-2">
+      <div class="flex justify-between items-center">
+        <f:render partial="Logo" arguments="{_all}" />
+        <button
+          name="menu"
+          onclick="Menu(this)"
+          class="md:hidden cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-white text-2xl w-8 h-8 pointer-events-none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </button>
+        <f:render partial="NavElements" arguments="{_all}" />
+      </div>
+    </nav>
+  </header>
+</html>

@@ -2,7 +2,8 @@
 .DS_Store
 .ddev
 node_modules
-public
 var
 vendor
+!Packages/t3mc/Resources/Public/*
+public/
 composer.lock

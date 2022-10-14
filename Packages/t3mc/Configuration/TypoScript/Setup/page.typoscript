@@ -3,14 +3,40 @@ config.contentObjectExceptionHandler = 0
 page = PAGE
 page {
 
+   shortcutIcon = EXT:t3mc/Resources/Public/Icons/favicon.png
+
+   meta{
+        viewport = width=device-width, initial-scale=1, user-scalable=no
+    }
+
    includeCSS{
       output = EXT:t3mc/Resources/Public/Css/output.css
    }
 
+   includeJSFooter{
+      mainJS = EXT:t3mc/Resources/Public/JavaScript/main.js
+   }
+
+   bodyTagAdd = class = "dark:bg-black"
+
    10 = FLUIDTEMPLATE
    10 {
+        file = EXT:t3mc/Resources/Private/Templates/DefaultTemplate.html
         layoutRootPath = EXT:t3mc/Resources/Private/Layouts/
         partialRootPath = EXT:t3mc/Resources/Private/Partials/
-        file = EXT:t3mc/Resources/Private/Templates/Default.html  
+
+        variables{
+
+         content0 < styles.content.get
+
+        }  
+
+        settings{
+
+         rootPageId = {$t3mc.rootPageId}
+         logoText = {$t3mc.logoText}
+         logoImage = {$t3mc.logoImage}
+
+        }
    }
 }
